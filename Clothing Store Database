@@ -24,3 +24,10 @@ SELECT * FROM Clothing_Store_Inventory
 SELECT article, color, quantity FROM clothing_store_inventory
 WHERE color = 'black'
 
+--Display invetory for t-shirts
+SELECT  article, sum(quantity) FROM clothing_store_inventory
+WHERE article = 't_shirt';
+
+--Display what quantity of articles of clothing in size small
+SELECT article, size, quantity FROM clothing_store_inventory
+WHERE size = 'small';
