@@ -1,18 +1,26 @@
---create clothing store databse
+--create clothing store inventory databse
 
-CREATE TABLE clothing (id integer primary key, article TEXT, color TEXT, size TEXT, quantity INTEGER);
+CREATE TABLE Clothing_Store_Inventory (id integer primary key, article TEXT, color TEXT, size TEXT, quantity INTEGER);
 
-INSERT INTO clothing VALUES (1, "t_shirt", "blue", "large", 100);
-INSERT INTO clothing VALUES (2, "t_shirt", "red", "medium", 50);
-INSERT INTO clothing VALUES (3, "t_shirt", "black", "small", 75);
-INSERT INTO clothing VALUES (4, "shorts", "blue", "large", 75);
-INSERT INTO clothing VALUES (6, "shorts", "grey", "medium", 100);
-INSERT INTO clothing VALUES (7, "joggers", "black", "large", 100);
-INSERT INTO clothing VALUES (8, "joggers", "grey", "medium", 75);
-INSERT INTO clothing VALUES (9, "sweatshirt", "black", "large", 75);
-INSERT INTO clothing VALUES (10, "sweatshirt", "blue", "medium", 75);
-INSERT INTO clothing VALUES (11, "hoodie", "pink", "small", 50);
-INSERT INTO clothing VALUES (12, "hoodie", "orange", "medium", 50);
-INSERT INTO clothing VALUES (13, "socks", "white", "small", 75);
-INSERT INTO clothing VALUES (14, "socks", "black", "medium", 100);
-INSERT INTO clothing VALUES (15, "hat", "black", "medium", 100);
+INSERT INTO Clothing_Store_Inventory VALUES (1, "t_shirt", "blue", "large", 100);
+INSERT INTO Clothing_Store_Inventory VALUES (2, "t_shirt", "red", "medium", 50);
+INSERT INTO Clothing_Store_Inventory VALUES (3, "t_shirt", "black", "small", 75);
+INSERT INTO Clothing_Store_Inventory VALUES (4, "shorts", "blue", "large", 75);
+INSERT INTO Clothing_Store_Inventory VALUES (5, "shorts", "pink", "small", 50);
+INSERT INTO Clothing_Store_Inventory VALUES (6, "shorts", "grey", "medium", 100);
+INSERT INTO Clothing_Store_Inventory VALUES (7, "joggers", "black", "large", 100);
+INSERT INTO Clothing_Store_Inventory VALUES (9, "sweatshirt", "black", "large", 75);
+INSERT INTO Clothing_Store_Inventory VALUES (10, "sweatshirt", "blue", "medium", 75);
+INSERT INTO Clothing_Store_Inventory VALUES (11, "hoodie", "pink", "small", 50);
+INSERT INTO Clothing_Store_Inventory VALUES (12, "hoodie", "orange", "medium", 50);
+INSERT INTO Clothing_Store_Inventory VALUES (13, "socks", "white", "small", 75);
+INSERT INTO Clothing_Store_Inventory VALUES (14, "socks", "black", "medium", 100);
+INSERT INTO Clothing_Store_Inventory VALUES (15, "hat", "black", "medium", 100);
+
+--Display full databse
+SELECT * FROM Clothing_Store_Inventory
+
+--Display all inventory in the color black along with quantities
+SELECT article, color, quantity FROM clothing_store_inventory
+WHERE color = 'black'
+
